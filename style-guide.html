@@ -19,76 +19,131 @@
   <h2>Overall Formatting</h2>
   <p>
     The website uses an external style sheet called <strong>format.css</strong> stored in the
-    <strong>_css</strong> folder. This file controls the main look of the portfolio.
+    <strong>_css</strong> folder. This file controls most of the main styling for the portfolio.
   </p>
   <p>
-    The overall site colors use a light background with darker text so the page is easy to read.
-    The general font-family for the site is Arial with sans-serif as a backup font.
+    The main font used across the site is <strong>Arial, sans-serif</strong>. This font was chosen
+    because it is simple, clean, and easy to read.
   </p>
   <p>
-    The body style controls the page background color and the default font for the site.
+    The body uses a light background color. In the style sheet, one body rule uses
+    <strong>background-color: #f4f8fb;</strong> with <strong>color: #222222;</strong>, and another
+    body rule later uses <strong>background-color: #f5f5f5;</strong>. Because the later rule appears
+    lower in the style sheet, it overrides the earlier background color. The body also uses
+    <strong>margin: 0;</strong> and <strong>padding: 0;</strong> to remove the browser’s default spacing.
   </p>
 
   <h2>Site Header / Branding</h2>
   <p>
-    The main heading style changes the color of the portfolio title and centers it on the page.
-    It also makes the heading larger so it stands out more.
+    The main heading is styled in more than one place. In the external style sheet, the
+    <strong>.site-title</strong> class uses <strong>color: #1d4ed8;</strong>,
+    <strong>text-align: center;</strong>, <strong>margin-top: 25px;</strong>, and
+    <strong>font-size: 2.2em;</strong>. This makes the title stand out and keeps it centered.
   </p>
   <p>
-    One embedded style changes the spacing between the letters in the main heading.
+    On the homepage, the embedded style for <strong>h1</strong> adds
+    <strong>letter-spacing: 2px;</strong>. Another rule in the style sheet sets the <strong>h1</strong>
+    color to <strong>navy</strong> and centers it. These styles help create a clean header area.
   </p>
 
   <h2>Navigation Links</h2>
   <p>
-    The navigation styles change the background color of the navigation area and add spacing
-    around the menu.
+    The navigation area uses a light blue color scheme. The <strong>.main-nav</strong> class uses
+    <strong>background-color: #dbeafe;</strong>, <strong>padding: 15px;</strong>,
+    <strong>border-top: 2px solid #93c5fd;</strong>, and
+    <strong>border-bottom: 2px solid #93c5fd;</strong>.
   </p>
   <p>
-    The list style removes the bullet points from the navigation links.
+    A second navigation rule for the <strong>nav</strong> element uses
+    <strong>background-color: lightblue;</strong> and <strong>padding: 10px;</strong>. This is part
+    of the simpler styling used directly on the current portfolio page.
   </p>
   <p>
-    The navigation list items are displayed in a line so the menu looks cleaner.
+    The navigation list removes bullet points with <strong>list-style-type: none;</strong>. The
+    embedded style in <strong>index.html</strong> also adds <strong>margin-top: 10px;</strong> and
+    <strong>margin-bottom: 10px;</strong> to the navigation list for spacing.
   </p>
   <p>
-    The link style changes the text color and removes the underline from the navigation links.
+    Navigation list items are displayed in a row using <strong>display: inline-block;</strong>. The
+    <strong>.nav-item</strong> class uses <strong>margin: 0 12px;</strong>, while the simpler
+    <strong>nav li</strong> rule uses <strong>margin-right: 15px;</strong>.
   </p>
   <p>
-    A hover style changes the color of the links when the mouse moves over them.
-  </p>
-  <p>
-    One embedded style changes the spacing above and below the navigation list.
-  </p>
-
-  <h2>Content Section</h2>
-  <p>
-    The paragraph style changes the text size and text color so the main content is easier to read.
-  </p>
-  <p>
-    One embedded style changes the line height of paragraphs to improve readability.
-  </p>
-  <p>
-    One inline style makes a navigation link bold.
-  </p>
-  <p>
-    One inline style changes the color of another navigation link.
-  </p>
-  <p>
-    One inline style adds a background color to the main paragraph on the homepage.
+    Navigation links remove underlines with <strong>text-decoration: none;</strong>. The
+    <strong>.nav-link</strong> class uses <strong>color: #1e3a8a;</strong> and
+    <strong>font-weight: bold;</strong>. Another simpler rule uses <strong>color: black;</strong>.
+    On hover, links change color to <strong>#dc2626</strong> or <strong>red</strong> to show user interaction.
   </p>
 
-  <h2>Extra Style Rules from format.css</h2>
+  <h2>Paragraph and Content Styling</h2>
   <p>
-    Additional CSS rules are used to control spacing such as padding, margin, and alignment.
-    These rules help the layout look cleaner and more organized.
+    Paragraph text is styled for readability. The external rule for <strong>p</strong> uses
+    <strong>font-size: 18px;</strong> and <strong>color: #333333;</strong>. The embedded style in
+    the homepage adds <strong>line-height: 1.6;</strong> to make the text easier to read.
   </p>
   <p>
-    These styles work together to give the portfolio a simple, clear, and more polished design.
+    The homepage also uses inline styles on paragraphs. The background color
+    <strong>#f0f8ff</strong> is added directly to the paragraph boxes. This gives the content a soft
+    highlighted area.
+  </p>
+  <p>
+    The <strong>.intro-text</strong> class includes <strong>text-align: center;</strong>,
+    <strong>font-size: 1.1em;</strong>, <strong>margin: 30px;</strong>,
+    <strong>padding: 15px;</strong>, <strong>background-color: #ffffff;</strong>,
+    <strong>border: 1px solid #cbd5e1;</strong>, and
+    <strong>border-radius: 10px;</strong>. These values create a centered content box with spacing and rounded corners.
+  </p>
+
+  <h2>Highlight and Layout Styles</h2>
+  <p>
+    The <strong>.highlight-box</strong> class is used for a wider content section. It uses
+    <strong>width: 80%;</strong> to control layout size, <strong>margin: 20px auto;</strong> to center
+    the box, and <strong>padding: 15px;</strong> for inside spacing.
+  </p>
+  <p>
+    This class also uses <strong>background-color: #e0f2fe;</strong> and
+    <strong>border-left: 6px solid #0284c7;</strong> to create a highlighted section that stands out.
+    These measurements make it easier for someone to extend the page design later.
+  </p>
+
+  <h2>Footer and Extra Link Styles</h2>
+  <p>
+    The <strong>.footer-note</strong> class uses <strong>text-align: center;</strong>,
+    <strong>font-size: 0.9em;</strong>, <strong>color: #555555;</strong>,
+    <strong>margin-top: 30px;</strong>, and <strong>margin-bottom: 20px;</strong>. This creates a smaller,
+    softer footer style.
+  </p>
+  <p>
+    The <strong>.style-guide-link</strong> class uses <strong>display: block;</strong>,
+    <strong>text-align: center;</strong>, <strong>margin-top: 20px;</strong>, and
+    <strong>font-weight: bold;</strong> to make the style guide link easier to notice.
+  </p>
+
+  <h2>List Styling</h2>
+  <p>
+    The general <strong>ul</strong> rule uses <strong>padding-left: 20px;</strong> to indent lists.
+    The general <strong>li</strong> rule uses <strong>margin-bottom: 5px;</strong> to add space
+    between list items.
+  </p>
+
+  <h2>Inline Styles Used on the Homepage</h2>
+  <p>
+    One inline style makes the <strong>Home</strong> navigation link bold using
+    <strong>font-weight: bold;</strong>.
+  </p>
+  <p>
+    One inline style changes the <strong>Link Lab</strong> navigation link color to
+    <strong>darkblue</strong>.
+  </p>
+  <p>
+    One inline style adds the background color <strong>#f0f8ff</strong> to the main paragraph on the homepage.
   </p>
 
   <h2>Style Guide Purpose</h2>
   <p>
-    This style guide explains the formatting choices used in the portfolio website.
-    It will be updated throughout the quarter as more styles are added to the site.
+    This style guide explains both what the styles do and the exact values used, including color values,
+    font names, sizing, spacing, and layout measurements. This information would help another person edit,
+    maintain, and extend the portfolio styling later.
   </p>
 </body>
 </html>
